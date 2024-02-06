@@ -1,7 +1,7 @@
 fn main() {
     println!("Hello, world!");
-    let _two = 2;
-    let mut _my_name = "Bill";
+    let _two = 2; // integer
+    let mut _my_name = "Bill"; // string
 
     fn add(a: i32, b: i32) -> i32 {
         a + b
@@ -55,4 +55,22 @@ fn main() {
 
     let (employee, direction) = ("Jake", Direction::Right);
     println!("{:?}", employee);
+
+    // vectors are arrays
+    let my_nums = vec![1, 2, 3];
+    let mut my_nums = Vec::new();
+    my_nums.push(4);
+    my_nums.push(5);
+    my_nums.push(6);
+    println!("{:?}", my_nums);
+    my_nums.pop();
+    let length = my_nums.len();
+    println!("{:?}", length);
+
+    let idx = my_nums[1];
+    println!("{:?}", idx);
+
+    for num in my_nums {
+        println!("{:?}", num);
+    }
 }
