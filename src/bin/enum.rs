@@ -29,7 +29,7 @@ fn main() {
         Discount::Flat(amount) => println!("flat discount amount of {:?}", amount),
         // the _ helps us ignore the percent variant
         // the return value () is equivalent to null
-        _ => (),
+        _ => println!("null"),
     }
 
     let concert = Ticket {
