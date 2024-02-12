@@ -8,9 +8,9 @@ impl Temperature {
         Self { degrees_f: 32.0 }
     }
 
-    fn boiling() -> Self {
-        Self { degrees_f: 100.0 }
-    }
+    // fn boiling() -> Self {
+    //     Self { degrees_f: 100.0 }
+    // }
 
     // this method prints out the degrees_f property
     fn show_temp(&self) {
