@@ -9,6 +9,12 @@ struct Ticket {
     price: i32,
 }
 
+struct ID {
+    name: String,
+    phone: i64,
+    address: String
+}
+
 fn main() {
     let n = 3;
     match n {
